@@ -87,6 +87,14 @@ a {
   color: #FFFFFF;
 }
 
+#menu li {
+  margin-top: 10px;
+}
+
+#menu li a {
+  font-size: 13px;
+}
+
 /* regole generali del corpo centrale */
 
 main {
