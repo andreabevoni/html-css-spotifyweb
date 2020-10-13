@@ -6,26 +6,45 @@
   box-sizing: border-box;
 }
 
-
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
-nav {
+/* regole menu con navigazione */
+
+#menu {
   width: 300px;
-  height: calc(100vh - 150px);
-  background-color: red;
+  height: calc(100vh - 100px);
+  background-color: #000000;
 }
+
+/* regole corpo centrale e barra upgrade in alto */
 
 main {
   width: calc(100% - 300px);
-  height: calc(100vh - 150px);
-  background-color: blue;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  color: #FFFFFF;
 }
+
+#upgrade {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 500;
+  background-color: rgba(8,11,18,0.5);
+}
+
+#music {
+  padding-top: 100px;
+  background-color: #141922;
+}
+
+/* regole player in basso */
 
 #player {
   width: 100%;
-  height: 150px;
-  background-color: yellow;
+  height: 100px;
+  background-color: #282828;
 }
