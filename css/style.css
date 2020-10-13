@@ -16,12 +16,41 @@ a {
   flex-wrap: wrap;
 }
 
+.white {
+  color: #FFFFFF;
+}
+
+.grey {
+  color: #888888;
+}
+
+.grey:hover {
+  color: #FFFFFF;
+}
+
 /* regole menu con navigazione */
 
 #menu {
   width: 300px;
   height: calc(100vh - 100px);
+  padding: 20px;
   background-color: #000000;
+  flex-direction: column;
+}
+
+#menu .logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+#menu .link {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+#menu .link img {
+  width: 30px;
+  vertical-align: middle;
 }
 
 /* regole generali del corpo centrale */
@@ -49,9 +78,8 @@ main {
 #upgrade a {
   margin-right: 20px;
   padding: 10px 40px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 10%/50%;
 }
