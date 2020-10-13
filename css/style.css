@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -19,26 +24,46 @@
   background-color: #000000;
 }
 
-/* regole corpo centrale e barra upgrade in alto */
+/* regole generali del corpo centrale */
 
 main {
   width: calc(100% - 300px);
   height: calc(100vh - 100px);
   overflow: auto;
-  color: #FFFFFF;
+  scrollbar-width: thin;
+  background-color: #141922;
 }
 
+/* regole della barra upgrade in alto */
+
 #upgrade {
-  width: 100%;
+  width: calc(100% - 300px);
   height: 100px;
   position: fixed;
   z-index: 500;
   background-color: rgba(8,11,18,0.5);
+  flex-direction: row-reverse;
+  align-items: center;
 }
+
+#upgrade a {
+  margin-right: 20px;
+  padding: 10px 40px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 10%/50%;
+}
+
+#upgrade a:hover {
+  transform: scale(1.1);
+}
+
+/* regole della zona centrale con le canzoni */
 
 #music {
   padding-top: 100px;
-  background-color: #141922;
 }
 
 /* regole player in basso */
