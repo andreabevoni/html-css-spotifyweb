@@ -21,7 +21,7 @@ a {
 }
 
 .grey {
-  color: #888888;
+  color: #6C6D72;
 }
 
 .grey:hover {
@@ -51,6 +51,40 @@ a {
 #menu .link img {
   width: 30px;
   vertical-align: middle;
+}
+
+#menu h3 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+#menu .playlist_plus {
+  width: 40px;
+  height: 40px;
+  background-color: #6C6D72;
+  justify-content: center;
+  align-content: center;
+}
+
+#menu .playlist_plus div {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#menu .playlist_text {
+  align-self: center;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #6C6D72;
+}
+
+#menu .playlist:hover .playlist_plus {
+  background-color: #FFFFFF;
+}
+
+#menu .playlist:hover .playlist_text {
+  color: #FFFFFF;
 }
 
 /* regole generali del corpo centrale */
