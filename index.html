@@ -14,32 +14,37 @@
       <section id="menu" class="container">
 
         <div class="logo">
-          <img src="img/logo.svg" alt="">
+          <img src="img/logo.svg" alt="" class="big xs-disappear">
+          <img src="img/logo-small.svg" alt="" class="small">
         </div>
 
-        <a href="#" class="link white">
-          <img src="img/home.svg" alt="">
-          Home
-        </a>
+        <div class="link-block">
 
-        <a href="#" class="link grey">
-          <img src="img/search.svg" alt="">
-          Cerca
-        </a>
+          <a href="#" class="container flex-vcenter white">
+            <img src="img/home.svg" alt="">
+            <span class="xs-disappear">Home</span>
+          </a>
 
-        <a href="#" class="link grey">
-          <img src="img/libreria.svg" alt="">
-          La tua libreria
-        </a>
+          <a href="#" class="container flex-vcenter grey">
+            <img src="img/search.svg" alt="">
+            <span class="xs-disappear">Cerca</span>
+          </a>
 
-        <h3 class="white">PLAYLIST</h3>
+          <a href="#" class="container flex-vcenter grey" id="test">
+            <img src="img/libreria.svg" alt="" class="grey">
+            <span class="xs-disappear">La tua libreria</span>
+          </a>
 
-        <a href="#" class="playlist container">
+        </div>
+
+        <h3 class="white xs-disappear">PLAYLIST</h3>
+
+        <a href="#" class="playlist container flex-vcenter xs-disappear">
           <div class="playlist_plus container"><div>+</div></div>
           <div class="playlist_text">Crea Playlist</div>
         </a>
 
-        <ul>
+        <ul class="xs-disappear">
           <li>
             <a href="#" class="grey">Nome Playlist</a>
           </li>
@@ -63,16 +68,14 @@
           </li>
         </ul>
 
-        <div class="install">
-          <a href="#" class="grey">
-            <img src="img/download.svg" alt="">
-            Installa app
-          </a>
-        </div>
+        <a href="#" class="install grey container flex-vcenter">
+          <img src="img/download.svg" alt="">
+          <span class="xs-disappear">Installa app</span>
+        </a>
 
-        <div class="account white">
+        <div class="account container flex-vcenter white">
           <img src="img/profile.svg" alt="">
-          John Doe
+          <span class="xs-disappear">John Doe</span>
         </div>
 
       </section>

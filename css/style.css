@@ -16,6 +16,10 @@ a {
   flex-wrap: wrap;
 }
 
+.flex-vcenter {
+  align-items: center;
+}
+
 .white {
   color: #FFFFFF;
 }
@@ -37,25 +41,29 @@ a {
   flex-flow: column nowrap;
 }
 
-#menu .logo {
+#menu .logo .big {
   width: 150px;
   margin: 20px;
 }
 
-#menu .link {
+#menu .logo .small {
+  display: none;
+}
+
+#menu .link-block a {
   margin-bottom: 10px;
   padding-left: 18px;
   border-left: 2px solid #000000;
   font-size: 13px;
 }
 
-#menu .link.white {
+#menu .link-block .white {
   border-left: 2px solid #ABFF36;
 }
 
-#menu .link img {
+#menu .link-block img {
   width: 30px;
-  vertical-align: middle;
+  margin-right: 5px;
 }
 
 #menu h3 {
@@ -79,7 +87,6 @@ a {
 }
 
 #menu .playlist_text {
-  align-self: center;
   font-size: 14px;
   color: #6C6D72;
 }
@@ -101,7 +108,7 @@ a {
 }
 
 #menu li {
-  margin: 20px 20px 0;
+  margin: 20px;
 }
 
 #menu li a {
@@ -117,8 +124,7 @@ a {
 
 #menu .install img {
   width: 15px;
-  margin-right: 5px;
-  vertical-align: middle;
+  margin-right: 10px;
 }
 
 #menu .account {
@@ -130,10 +136,9 @@ a {
 #menu .account img {
   width: 25px;
   height: 25px;
-  margin-right: 5px;
+  margin-right: 10px;
   border-radius: 50%;
   background-color: #6C6D72;
-  vertical-align: middle;
 }
 
 /* regole generali del corpo centrale */
@@ -183,4 +188,61 @@ main {
   width: 100%;
   height: 100px;
   background-color: #282828;
+}
+
+
+/* regole per versione XS */
+@media all and (max-width: 768px) {
+
+  .xs-disappear {
+    display: none;
+  }
+
+  #menu {
+    width: 50px;
+  }
+
+  main {
+    width: calc(100% - 50px);
+  }
+
+  #upgrade {
+    width: calc(100% - 50px);
+  }
+
+  #menu .logo .small {
+    display: block;
+    width: 30px;
+    margin: auto;
+    padding: 10px 0 20px;
+  }
+
+  #menu .link-block {
+    flex-grow: 1;
+  }
+
+  #menu .link-block a,
+  #menu .link-block .white {
+    border: none;
+    padding: 0;
+  }
+
+    #menu .link-block img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #menu .install,
+  #menu .account {
+    margin: 0 auto;
+    padding: 10px 0;
+    border: none;
+}
+
+  #menu .install img,
+  #menu .account img {
+    margin: 0;
+  }
+
+
 }
