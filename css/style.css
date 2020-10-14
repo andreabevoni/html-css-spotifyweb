@@ -39,6 +39,7 @@ a {
   height: calc(100vh - 100px);
   background-color: #000000;
   flex-flow: column nowrap;
+  align-items: flex-start;
 }
 
 #menu .logo .big {
@@ -116,10 +117,8 @@ a {
 }
 
 #menu .install {
-  margin: 0 20px;
+  margin: 10px 20px;
   font-size: 13px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #6C6D72;
 }
 
 #menu .install img {
@@ -128,7 +127,10 @@ a {
 }
 
 #menu .account {
-  margin: 10px 20px;
+  margin: 0 20px;
+  padding: 10px 0;
+  border-top: 1px solid #6C6D72;
+  align-self: stretch;
   font-size: 14px;
   font-weight: bold;
 }
@@ -200,6 +202,7 @@ main {
 
   #menu {
     width: 50px;
+    align-items: stretch;
   }
 
   main {
@@ -228,7 +231,6 @@ main {
   }
 
     #menu .link-block img {
-    display: block;
     margin: 0 auto;
   }
 
