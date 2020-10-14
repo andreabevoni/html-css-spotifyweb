@@ -31,21 +31,26 @@ a {
 /* regole menu con navigazione */
 
 #menu {
-  width: 300px;
+  width: 250px;
   height: calc(100vh - 100px);
-  padding: 20px;
   background-color: #000000;
-  flex-direction: column;
+  flex-flow: column nowrap;
 }
 
 #menu .logo {
   width: 150px;
-  margin-bottom: 30px;
+  margin: 20px;
 }
 
 #menu .link {
   margin-bottom: 10px;
+  padding-left: 18px;
+  border-left: 2px solid #000000;
   font-size: 13px;
+}
+
+#menu .link.white {
+  border-left: 2px solid #ABFF36;
 }
 
 #menu .link img {
@@ -54,13 +59,14 @@ a {
 }
 
 #menu h3 {
-  margin: 10px 0;
+  margin: 10px 20px;
   font-size: 14px;
 }
 
 #menu .playlist_plus {
   width: 40px;
   height: 40px;
+  margin: 0 10px 0 20px;
   background-color: #6C6D72;
   justify-content: center;
   align-content: center;
@@ -74,7 +80,6 @@ a {
 
 #menu .playlist_text {
   align-self: center;
-  margin-left: 10px;
   font-size: 14px;
   color: #6C6D72;
 }
@@ -87,18 +92,54 @@ a {
   color: #FFFFFF;
 }
 
+#menu ul {
+  min-height: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
 #menu li {
-  margin-top: 10px;
+  margin: 20px 20px 0;
 }
 
 #menu li a {
   font-size: 13px;
 }
 
+#menu .install {
+  margin: 0 20px;
+  font-size: 13px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6C6D72;
+}
+
+#menu .install img {
+  width: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#menu .account {
+  margin: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#menu .account img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #6C6D72;
+  vertical-align: middle;
+}
+
 /* regole generali del corpo centrale */
 
 main {
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   height: calc(100vh - 100px);
   overflow: auto;
   scrollbar-width: thin;
@@ -108,11 +149,11 @@ main {
 /* regole della barra upgrade in alto */
 
 #upgrade {
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   height: 100px;
   position: fixed;
   z-index: 500;
-  background-color: rgba(8,11,18,0.5);
+  background-color: rgba(0,0,0,0.4);
   flex-direction: row-reverse;
   align-items: center;
 }
