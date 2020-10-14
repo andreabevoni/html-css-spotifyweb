@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
   <body>
-    <div class="container">
+    <div id="global-container" class="container">
 
       <section id="menu" class="container">
 
@@ -116,10 +116,41 @@
           </div>
         </div>
 
-        <!-- parte comandi centrali -->
-        <div class="commands">
+        <!-- spaziatura -->
+        <div class="bottom-space"></div>
 
+        <!-- parte comandi centrali -->
+        <div class="control-panel container">
+          <div class="commands container">
+            <a href="#">
+              <i class="fas fa-random white"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-step-backward white"></i>
+            </a>
+            <a href="#">
+              <i class="far fa-play-circle white"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-step-forward white"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-redo-alt white"></i>
+            </a>
+          </div>
+          <div class="song-time container flex-vcenter">
+            <div class="clock white">0:25</div>
+            <div class="time-max container">
+              <div class="time-current">
+              </div>
+              <i class="fas fa-circle white"></i>
+            </div>
+            <div class="clock white">4:35</div>
+          </div>
         </div>
+
+        <!-- spaziatura -->
+        <div class="bottom-space"></div>
 
         <!-- parte volume a dx -->
         <div class="volume container">

@@ -13,6 +13,9 @@ a {
 
 .container {
   display: flex;
+}
+
+#global-container {
   flex-wrap: wrap;
 }
 
@@ -38,7 +41,7 @@ a {
   width: 250px;
   height: calc(100vh - 100px);
   background-color: #000000;
-  flex-flow: column nowrap;
+  flex-flow: column;
   align-items: flex-start;
 }
 
@@ -79,6 +82,7 @@ a {
   background-color: #6C6D72;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 #menu .playlist_plus div {
@@ -184,12 +188,49 @@ main {
   padding-top: 100px;
 }
 
-/* regole player in basso */
+/* regole comuni player in basso */
 
 #player {
   width: 100%;
   height: 100px;
   background-color: #282828;
+}
+
+#player .bottom-space {
+  flex-basis: 200px;
+  flex-shrink: 2;
+}
+
+#player .time-max,
+#player .volume-max {
+  height: 5px;
+  background-color: #6C6D72;;
+  border-radius: 5px;
+}
+
+#player .time-current,
+#player .volume-current {
+  width: 20%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+#player .fa-circle {
+  font-size: 16px;
+  margin-left: -8px;
+  margin-top: -5px;
+  display: none;
+}
+
+#player .time-max:hover .time-current,
+#player .volume-max:hover .volume-current {
+  background-color: #ABFF36;
+}
+
+#player .time-max:hover .fa-circle,
+#player .volume-max:hover .fa-circle {
+  display: block;
 }
 
 /* regole info canzone a sx */
@@ -227,19 +268,52 @@ main {
 
 /* regole comandi centrali */
 
-#player .commands {
+#player .control-panel {
+  flex-basis: 600px;
   flex-grow: 1;
-  /* debug */
-  border: 1px solid yellow;
+  flex-shrink: 1;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#player .commands {
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#player .commands .fas {
+  font-size: 16px;
+}
+
+#player .commands .far {
+  font-size: 30px;
+}
+
+#player .commands .far:hover {
+  transform: scale(1.2);
+}
+
+#player .song-time {
+  margin-top: 20px;
+  align-self: stretch;
+  justify-content: center;
+}
+
+#player .clock {
+  font-size: 10px;
+}
+
+#player .time-max {
+  margin: 0 10px;
+  flex-grow: 1;
 }
 
 /* regole volume a dx */
 
 #player .volume {
   align-items: center;
-  width: 250px;
-  /* debug */
-  border: 1px solid red;
 }
 
 #player .volume > .fas {
@@ -248,38 +322,8 @@ main {
 
 #player .volume-max {
   margin-right: 10px;
-  flex-grow: 1;
-  height: 5px;
-  background-color: #6C6D72;
-  border-radius: 5px;
+  width: 100px;
 }
-
-#player .volume-current {
-  width: 20%;
-  height: 100%;
-  background-color: #FFFFFF;
-  border-radius: 5px;
-}
-
-#player .fa-circle {
-  font-size: 16px;
-  margin-left: -8px;
-  margin-top: -5px;
-  display: none;
-}
-
-#player .volume-max:hover .volume-current {
-  background-color: #ABFF36;
-}
-
-#player .volume-max:hover .fa-circle {
-  display: block;
-}
-
-
-
-
-
 
 
 /* regole per versione XS */
