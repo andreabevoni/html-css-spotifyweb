@@ -205,16 +205,17 @@ main {
   margin-right: 40px;
 }
 
-#player .info-song div {
+#player .info-song .name-song {
   font-size: 13px;
   font-weight: bold;
 }
 
-#player .info-song a {
+#player .info-song .album-song div {
   font-size: 12px;
+  margin-right: 3px;
 }
 
-#player .info-song a:hover {
+#player .info-song .album-song:hover {
   text-decoration: underline;
 }
 
@@ -237,23 +238,17 @@ main {
 
 
 /* regole per versione XS */
-@media all and (max-width: 768px) {
+@media all and (max-width: 576px) {
 
   .xs-disappear {
     display: none;
   }
 
+  /* regole menu in XS */
+
   #menu {
     width: 50px;
     align-items: stretch;
-  }
-
-  main {
-    width: calc(100% - 50px);
-  }
-
-  #upgrade {
-    width: calc(100% - 50px);
   }
 
   #menu .logo .small {
@@ -273,7 +268,7 @@ main {
     padding: 0;
   }
 
-    #menu .link-block img {
+  #menu .link-block img {
     margin: 0 auto;
   }
 
@@ -289,5 +284,40 @@ main {
     margin: 0;
   }
 
+  /* regole corpo centrale in XS */
 
+  main {
+    width: calc(100% - 50px);
+  }
+
+  #upgrade {
+    width: calc(100% - 50px);
+  }
+
+  /* regole player in XS */
+
+  #player .info-song {
+    margin-right: 20px;
+  }
+
+  #player .album-song,
+  #player .action-song {
+    flex-direction: column;
+  }
+
+}
+
+
+/* regole per versione S */
+@media all and (min-width: 577px) and (max-width: 768px) {
+
+  /* regole player in S */
+
+  #player .info-song {
+    margin-right: 20px;
+  }
+
+  #player .action-song {
+    flex-direction: column;
+  }
 }
