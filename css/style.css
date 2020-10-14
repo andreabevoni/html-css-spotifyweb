@@ -192,6 +192,49 @@ main {
   background-color: #282828;
 }
 
+#player .current-song{
+  align-items: center;
+}
+
+#player .current-song img {
+  margin: 0 10px;
+  width: 50px;
+}
+
+#player .info-song {
+  margin-right: 40px;
+}
+
+#player .info-song div {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#player .info-song a {
+  font-size: 12px;
+}
+
+#player .info-song a:hover {
+  text-decoration: underline;
+}
+
+#player .action-song a {
+  margin-right: 10px;
+}
+
+
+#player .commands {
+  border: 1px solid yellow;
+  flex-grow: 1;
+}
+
+
+#player .volume {
+  border: 1px solid red;
+  width: 250px;
+}
+
+
 
 /* regole per versione XS */
 @media all and (max-width: 768px) {
