@@ -210,15 +210,39 @@ main {
 }
 
 #music h1 {
-  margin: 30px 10px;
+  margin: 30px 20px;
 }
 
 #music h4 {
-  margin: -20px 10px 20px;
+  margin: -20px 20px 20px;
   font-size: 12px;
 }
 
+#music .category {
+  padding-right: 20px;
+  flex-wrap: wrap;
+}
 
+#music .song {
+  margin-left: 20px;
+  width: calc((100% / 6) - 20px);
+  text-align: center;
+}
+
+#music .song img {
+  width: 100%;
+}
+
+#music .song .white {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#music .song .grey {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
 
 /* regole comuni player in basso */
 
@@ -426,6 +450,11 @@ main {
     flex-direction: column;
   }
 
+  /* regole main in XS */
+  #music .song {
+    width: calc((100% / 2) - 20px);
+  }
+
 }
 
 
@@ -441,4 +470,21 @@ main {
   #player .action-song {
     flex-direction: column;
   }
+
+  /* regole main in S */
+  #music .song {
+    width: calc((100% / 2) - 20px);
+  }
+
+}
+
+
+/* regole per versione MD */
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+  /* regole main in MD */
+  #music .song {
+    width: calc((100% / 4) - 20px);
+  }
+
 }
