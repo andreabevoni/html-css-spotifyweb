@@ -31,7 +31,7 @@ a {
   color: #6C6D72;
 }
 
-.grey:hover {
+a.grey:hover {
   color: #FFFFFF;
 }
 
@@ -207,6 +207,15 @@ main {
 #music .genres .selected-line {
   width: 30px;
   border-bottom: 2px solid #ABFF36;
+}
+
+#music h1 {
+  margin: 30px 10px;
+}
+
+#music h4 {
+  margin: -20px 10px 20px;
+  font-size: 12px;
 }
 
 
