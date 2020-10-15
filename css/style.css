@@ -211,15 +211,11 @@ main {
 
 #music h1 {
   margin: 30px 20px;
-  /* debug */
-  border: 1px solid red;
 }
 
 #music h4 {
   margin: -20px 20px 20px;
   font-size: 12px;
-  /* debug */
-  border: 1px solid blue;
 }
 
 #music .category {
@@ -231,8 +227,6 @@ main {
   margin-left: 20px;
   width: calc((100% / 6) - 20px);
   text-align: center;
-  /* debug */
-  border: 1px solid yellow;
 }
 
 #music .cover {
@@ -257,13 +251,13 @@ main {
 }
 
 #music .song > .white {
-  margin: 10px 0 5px;
+  margin: 10px 0 20px;
   font-size: 14px;
   font-weight: bold;
 }
 
 #music .song > .grey {
-  margin-bottom: 10px;
+  margin: -15px 0 15px;
   font-size: 12px;
 }
 
