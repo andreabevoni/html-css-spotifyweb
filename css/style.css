@@ -188,6 +188,29 @@ main {
   padding-top: 100px;
 }
 
+#music .genres {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#music .genres a {
+  margin: 10px 5px 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#music .genres .selected {
+  flex-direction: column;
+  align-items: center;
+}
+
+#music .genres .selected-line {
+  width: 30px;
+  border-bottom: 2px solid #ABFF36;
+}
+
+
+
 /* regole comuni player in basso */
 
 #player {
