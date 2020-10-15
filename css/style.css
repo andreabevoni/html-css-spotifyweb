@@ -35,7 +35,7 @@ a.grey:hover {
   color: #FFFFFF;
 }
 
-/* regole menu con navigazione */
+/* regole menu a sinistra con navigazione */
 
 #menu {
   width: 250px;
@@ -109,6 +109,7 @@ a.grey:hover {
   flex-grow: 1;
   flex-shrink: 1;
   overflow: auto;
+  align-self: stretch;
   scrollbar-width: thin;
 }
 
@@ -314,7 +315,7 @@ main {
   display: block;
 }
 
-/* regole info canzone a sx */
+/* regole info canzone a sinistra */
 
 #player .current-song{
   align-items: center;
@@ -391,7 +392,7 @@ main {
   flex-grow: 1;
 }
 
-/* regole volume a dx */
+/* regole volume a destra */
 
 #player .volume {
   align-items: center;
@@ -466,6 +467,10 @@ main {
     width: calc(100% - 50px);
   }
 
+  #music .song {
+    width: calc((100% / 2) - 20px);
+  }
+
   /* regole player in XS */
 
   #player .info-song {
@@ -475,11 +480,6 @@ main {
   #player .album-song,
   #player .action-song {
     flex-direction: column;
-  }
-
-  /* regole main in XS */
-  #music .song {
-    width: calc((100% / 2) - 20px);
   }
 
 }
@@ -498,7 +498,7 @@ main {
     flex-direction: column;
   }
 
-  /* regole main in S */
+  /* regole corpo centrale in S */
   #music .song {
     width: calc((100% / 2) - 20px);
   }
@@ -509,7 +509,7 @@ main {
 /* regole per versione MD */
 @media all and (min-width: 769px) and (max-width: 992px) {
 
-  /* regole main in MD */
+  /* regole corpo centrale in MD */
   #music .song {
     width: calc((100% / 4) - 20px);
   }
