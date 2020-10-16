@@ -1,4 +1,4 @@
-/* regole generali */
+/* REGOLE GENERALI */
 
 * {
   margin: 0;
@@ -11,12 +11,12 @@ a {
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-}
-
 #global-container {
   flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
 }
 
 .flex-vcenter {
@@ -35,7 +35,7 @@ a.grey:hover {
   color: #FFFFFF;
 }
 
-/* regole menu a sinistra con navigazione */
+/* REGOLE MENU A SINISTRA CON NAVIGAZIONE */
 
 #menu {
   width: 250px;
@@ -45,15 +45,18 @@ a.grey:hover {
   align-items: flex-start;
 }
 
+/* logo spotify grosso */
 #menu .logo .big {
   width: 150px;
   margin: 20px;
 }
 
+/* logo spotify piccolo */
 #menu .logo .small {
   display: none;
 }
 
+/* blocco di link (home, search, library) */
 #menu .link-block a {
   margin-bottom: 10px;
   padding-left: 18px;
@@ -70,6 +73,7 @@ a.grey:hover {
   margin-right: 5px;
 }
 
+/* parte playlist */
 #menu h3 {
   margin: 10px 20px;
   font-size: 14px;
@@ -113,6 +117,7 @@ a.grey:hover {
   font-size: 13px;
 }
 
+/* parte install */
 #menu .install {
   margin: 10px 20px;
   font-size: 13px;
@@ -123,6 +128,7 @@ a.grey:hover {
   margin-right: 10px;
 }
 
+/* parte account */
 #menu .account {
   margin: 0 20px;
   padding: 10px 0;
@@ -140,7 +146,7 @@ a.grey:hover {
   background-color: #6C6D72;
 }
 
-/* regole generali del corpo centrale */
+/* REGOLE GENERALI DEL CORPO CENTRALE */
 
 main {
   width: calc(100% - 250px);
@@ -150,8 +156,7 @@ main {
   background-color: #141922;
 }
 
-/* regole della barra upgrade in alto */
-
+/* barra upgrade in alto */
 #upgrade {
   width: calc(100% - 250px);
   height: 100px;
@@ -175,12 +180,12 @@ main {
   transform: scale(1.1);
 }
 
-/* regole della zona centrale con le canzoni */
-
+/* zona centrale */
 #music {
   padding-top: 100px;
 }
 
+/* link ai generi, podcast, ecc... */
 #music .genres {
   justify-content: center;
   flex-wrap: wrap;
@@ -202,6 +207,7 @@ main {
   border-bottom: 2px solid #ABFF36;
 }
 
+/* titoli delle sezioni in cui sono divise le file di canzoni */
 #music h1 {
   margin: 30px 20px;
 }
@@ -211,6 +217,7 @@ main {
   font-size: 12px;
 }
 
+/* parte relativa alle file di canzoni e artisti */
 #music .category {
   padding-right: 20px;
   flex-wrap: wrap;
@@ -266,7 +273,7 @@ main {
   filter: brightness(50%);
 }
 
-/* regole comuni player in basso */
+/* REGOLE PER IL PLAYER IN BASSO */
 
 #player {
   width: 100%;
@@ -279,6 +286,7 @@ main {
   flex-shrink: 2;
 }
 
+/* regole comuni per le barre di volume e lunghezza canzone */
 #player .time-max,
 #player .volume-max {
   height: 5px;
@@ -311,8 +319,7 @@ main {
   display: block;
 }
 
-/* regole info canzone a sinistra */
-
+/* info canzone a sinistra */
 #player .current-song{
   align-items: center;
 }
@@ -345,7 +352,6 @@ main {
 }
 
 /* regole comandi centrali */
-
 #player .control-panel {
   flex-basis: 600px;
   flex-grow: 1;
@@ -373,6 +379,7 @@ main {
   transform: scale(1.2);
 }
 
+/* regole barra lunghezza canzone */
 #player .song-time {
   margin-top: 20px;
   align-self: stretch;
@@ -389,7 +396,6 @@ main {
 }
 
 /* regole volume a destra */
-
 #player .volume {
   align-items: center;
 }
@@ -406,20 +412,21 @@ main {
 
 /* REGOLE RESPONSIVE */
 
-/* regole per versione XS */
+/* VERSIONE XS */
 @media all and (max-width: 576px) {
 
   .xs-disappear {
     display: none;
   }
 
-  /* regole menu in XS */
+  /* MENU IN XS */
 
   #menu {
     width: 50px;
     align-items: stretch;
   }
 
+  /* parte logo */
   #menu .logo .small {
     display: block;
     width: 30px;
@@ -427,6 +434,7 @@ main {
     padding: 10px 0 20px;
   }
 
+  /* parte blocco di link (home, search...) */
   #menu .link-block {
     flex-grow: 1;
   }
@@ -441,6 +449,7 @@ main {
     margin: 0 auto;
   }
 
+  /* parte install e account */
   #menu .install,
   #menu .account {
     margin: 0 auto;
@@ -453,7 +462,7 @@ main {
     margin: 0;
   }
 
-  /* regole corpo centrale in XS */
+  /* CORPO CENTRALE IN XS */
 
   main {
     width: calc(100% - 50px);
@@ -467,7 +476,7 @@ main {
     width: calc((100% / 2) - 20px);
   }
 
-  /* regole player in XS */
+  /* PLAYER IN XS */
 
   #player .info-song {
     margin-right: 20px;
@@ -481,10 +490,10 @@ main {
 }
 
 
-/* regole per versione S */
+/* VERSIONE S */
 @media all and (min-width: 577px) and (max-width: 768px) {
 
-  /* regole player in S */
+  /* PLAYER IN S */
 
   #player .info-song {
     margin-right: 20px;
@@ -494,7 +503,8 @@ main {
     flex-direction: column;
   }
 
-  /* regole corpo centrale in S */
+  /* CORPO CENTRALE IN S */
+
   #music .song {
     width: calc((100% / 2) - 20px);
   }
@@ -502,10 +512,11 @@ main {
 }
 
 
-/* regole per versione MD */
+/* VERSIONE MD */
 @media all and (min-width: 769px) and (max-width: 992px) {
 
-  /* regole corpo centrale in MD */
+  /* CORPO CENTRALE IN MD */
+
   #music .song {
     width: calc((100% / 4) - 20px);
   }
