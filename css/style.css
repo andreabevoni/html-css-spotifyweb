@@ -254,6 +254,10 @@ main {
   font-size: 12px;
 }
 
+#music .song:hover {
+  cursor: pointer;
+}
+
 #music .song:hover i {
   display: block;
 }
